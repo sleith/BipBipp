@@ -3,18 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10A002B1072A2532D36B8C18 /* Pods_BipBippTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999090FFFC0ACB639699A6BC /* Pods_BipBippTests.framework */; };
 		4DF155B425307E6F00548919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF155B325307E6F00548919 /* AppDelegate.swift */; };
-		4DF155B625307E6F00548919 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF155B525307E6F00548919 /* SceneDelegate.swift */; };
 		4DF155B825307E6F00548919 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF155B725307E6F00548919 /* ViewController.swift */; };
 		4DF155BB25307E6F00548919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF155B925307E6F00548919 /* Main.storyboard */; };
 		4DF155BD25307E6F00548919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF155BC25307E6F00548919 /* Assets.xcassets */; };
 		4DF155C025307E6F00548919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF155BE25307E6F00548919 /* LaunchScreen.storyboard */; };
 		4DF155CB25307E6F00548919 /* BipBippTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF155CA25307E6F00548919 /* BipBippTests.swift */; };
 		4DF155D625307E7000548919 /* BipBippUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF155D525307E7000548919 /* BipBippUITests.swift */; };
+		4DF155EE25307F3700548919 /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF155ED25307F3700548919 /* HomeModule.swift */; };
+		4DF155F42530839F00548919 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF155F32530839F00548919 /* HomeInteractor.swift */; };
+		4DF155FC253083C200548919 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF155FB253083C200548919 /* HomePresenter.swift */; };
+		4DF156012530841F00548919 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF156002530841F00548919 /* HomeRouter.swift */; };
+		4DF156062530854C00548919 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF156052530854C00548919 /* HomeView.swift */; };
+		4DF1561025308E9E00548919 /* HomeDefaultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1560F25308E9E00548919 /* HomeDefaultPresenter.swift */; };
+		4DF1561825308F3000548919 /* HomeDefaultInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1561725308F3000548919 /* HomeDefaultInteractor.swift */; };
+		4DF1561D25308F6600548919 /* HomeDefaultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1561C25308F6600548919 /* HomeDefaultRouter.swift */; };
+		4DF1562B2530917E00548919 /* HomeDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF156292530917E00548919 /* HomeDefaultView.swift */; };
+		4DF1562C2530917E00548919 /* HomeDefaultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1562A2530917E00548919 /* HomeDefaultView.xib */; };
+		4DF1564925309FB200548919 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1564825309FB200548919 /* CategoryModel.swift */; };
+		4DF1564E2530A45500548919 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1564D2530A45500548919 /* ItemModel.swift */; };
+		B74FB199BB0E2F49E3FA8AE2 /* Pods_BipBipp_BipBippUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07608B4A7925AC8FCE82C543 /* Pods_BipBipp_BipBippUITests.framework */; };
+		B9FA082B85C7065B3E6F3034 /* Pods_BipBipp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C001C06CA780F43629E44028 /* Pods_BipBipp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07608B4A7925AC8FCE82C543 /* Pods_BipBipp_BipBippUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BipBipp_BipBippUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF155B025307E6F00548919 /* BipBipp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BipBipp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF155B325307E6F00548919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4DF155B525307E6F00548919 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4DF155B725307E6F00548919 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4DF155BA25307E6F00548919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DF155BC25307E6F00548919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +63,26 @@
 		4DF155D125307E7000548919 /* BipBippUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BipBippUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF155D525307E7000548919 /* BipBippUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BipBippUITests.swift; sourceTree = "<group>"; };
 		4DF155D725307E7000548919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF155ED25307F3700548919 /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
+		4DF155F32530839F00548919 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		4DF155FB253083C200548919 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		4DF156002530841F00548919 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		4DF156052530854C00548919 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4DF1560F25308E9E00548919 /* HomeDefaultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDefaultPresenter.swift; sourceTree = "<group>"; };
+		4DF1561725308F3000548919 /* HomeDefaultInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDefaultInteractor.swift; sourceTree = "<group>"; };
+		4DF1561C25308F6600548919 /* HomeDefaultRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDefaultRouter.swift; sourceTree = "<group>"; };
+		4DF156292530917E00548919 /* HomeDefaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDefaultView.swift; sourceTree = "<group>"; };
+		4DF1562A2530917E00548919 /* HomeDefaultView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeDefaultView.xib; sourceTree = "<group>"; };
+		4DF1564825309FB200548919 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		4DF1564D2530A45500548919 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		63210FAC1C02ABA7039D1BD0 /* Pods-BipBipp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BipBipp.debug.xcconfig"; path = "Target Support Files/Pods-BipBipp/Pods-BipBipp.debug.xcconfig"; sourceTree = "<group>"; };
+		7586E879705A444307B75412 /* Pods-BipBippTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BipBippTests.release.xcconfig"; path = "Target Support Files/Pods-BipBippTests/Pods-BipBippTests.release.xcconfig"; sourceTree = "<group>"; };
+		8150A21F75CFCAC097EDECDE /* Pods-BipBipp-BipBippUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BipBipp-BipBippUITests.release.xcconfig"; path = "Target Support Files/Pods-BipBipp-BipBippUITests/Pods-BipBipp-BipBippUITests.release.xcconfig"; sourceTree = "<group>"; };
+		87907CEF126ABA2ADB126B8A /* Pods-BipBipp-BipBippUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BipBipp-BipBippUITests.debug.xcconfig"; path = "Target Support Files/Pods-BipBipp-BipBippUITests/Pods-BipBipp-BipBippUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		999090FFFC0ACB639699A6BC /* Pods_BipBippTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BipBippTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8EEE803DB7CA8E049BAE61 /* Pods-BipBipp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BipBipp.release.xcconfig"; path = "Target Support Files/Pods-BipBipp/Pods-BipBipp.release.xcconfig"; sourceTree = "<group>"; };
+		C001C06CA780F43629E44028 /* Pods_BipBipp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BipBipp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA982F4366242315298585B /* Pods-BipBippTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BipBippTests.debug.xcconfig"; path = "Target Support Files/Pods-BipBippTests/Pods-BipBippTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9FA082B85C7065B3E6F3034 /* Pods_BipBipp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10A002B1072A2532D36B8C18 /* Pods_BipBippTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B74FB199BB0E2F49E3FA8AE2 /* Pods_BipBipp_BipBippUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +120,8 @@
 				4DF155C925307E6F00548919 /* BipBippTests */,
 				4DF155D425307E7000548919 /* BipBippUITests */,
 				4DF155B125307E6F00548919 /* Products */,
+				EF7322705AF0234681497429 /* Pods */,
+				998F076E932AB644C310928A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,8 +138,10 @@
 		4DF155B225307E6F00548919 /* BipBipp */ = {
 			isa = PBXGroup;
 			children = (
+				4DF155EA25307EC700548919 /* entities */,
+				4DF155E925307E9100548919 /* services */,
+				4DF155EB25307EDA00548919 /* modules */,
 				4DF155B325307E6F00548919 /* AppDelegate.swift */,
-				4DF155B525307E6F00548919 /* SceneDelegate.swift */,
 				4DF155B725307E6F00548919 /* ViewController.swift */,
 				4DF155B925307E6F00548919 /* Main.storyboard */,
 				4DF155BC25307E6F00548919 /* Assets.xcassets */,
@@ -128,6 +169,94 @@
 			path = BipBippUITests;
 			sourceTree = "<group>";
 		};
+		4DF155E925307E9100548919 /* services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		4DF155EA25307EC700548919 /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				4DF1564825309FB200548919 /* CategoryModel.swift */,
+				4DF1564D2530A45500548919 /* ItemModel.swift */,
+			);
+			path = entities;
+			sourceTree = "<group>";
+		};
+		4DF155EB25307EDA00548919 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				4DF155EC25307F0200548919 /* Home */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		4DF155EC25307F0200548919 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4DF155ED25307F3700548919 /* HomeModule.swift */,
+				4DF155F22530810900548919 /* interfaces */,
+				4DF1560D25308E6100548919 /* implementations */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4DF155F22530810900548919 /* interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				4DF155FB253083C200548919 /* HomePresenter.swift */,
+				4DF155F32530839F00548919 /* HomeInteractor.swift */,
+				4DF156002530841F00548919 /* HomeRouter.swift */,
+				4DF156052530854C00548919 /* HomeView.swift */,
+			);
+			path = interfaces;
+			sourceTree = "<group>";
+		};
+		4DF1560D25308E6100548919 /* implementations */ = {
+			isa = PBXGroup;
+			children = (
+				4DF1560E25308E7D00548919 /* Default */,
+			);
+			path = implementations;
+			sourceTree = "<group>";
+		};
+		4DF1560E25308E7D00548919 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				4DF1560F25308E9E00548919 /* HomeDefaultPresenter.swift */,
+				4DF1561725308F3000548919 /* HomeDefaultInteractor.swift */,
+				4DF1561C25308F6600548919 /* HomeDefaultRouter.swift */,
+				4DF156292530917E00548919 /* HomeDefaultView.swift */,
+				4DF1562A2530917E00548919 /* HomeDefaultView.xib */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		998F076E932AB644C310928A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C001C06CA780F43629E44028 /* Pods_BipBipp.framework */,
+				07608B4A7925AC8FCE82C543 /* Pods_BipBipp_BipBippUITests.framework */,
+				999090FFFC0ACB639699A6BC /* Pods_BipBippTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF7322705AF0234681497429 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63210FAC1C02ABA7039D1BD0 /* Pods-BipBipp.debug.xcconfig */,
+				BC8EEE803DB7CA8E049BAE61 /* Pods-BipBipp.release.xcconfig */,
+				87907CEF126ABA2ADB126B8A /* Pods-BipBipp-BipBippUITests.debug.xcconfig */,
+				8150A21F75CFCAC097EDECDE /* Pods-BipBipp-BipBippUITests.release.xcconfig */,
+				DEA982F4366242315298585B /* Pods-BipBippTests.debug.xcconfig */,
+				7586E879705A444307B75412 /* Pods-BipBippTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +264,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DF155DA25307E7000548919 /* Build configuration list for PBXNativeTarget "BipBipp" */;
 			buildPhases = (
+				8C22FD75B503F403EBAD2FBA /* [CP] Check Pods Manifest.lock */,
 				4DF155AC25307E6F00548919 /* Sources */,
 				4DF155AD25307E6F00548919 /* Frameworks */,
 				4DF155AE25307E6F00548919 /* Resources */,
+				B9FC33F86424CEE7F8C070F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +283,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DF155DD25307E7000548919 /* Build configuration list for PBXNativeTarget "BipBippTests" */;
 			buildPhases = (
+				1F12D8E65B344976A6C72E6B /* [CP] Check Pods Manifest.lock */,
 				4DF155C225307E6F00548919 /* Sources */,
 				4DF155C325307E6F00548919 /* Frameworks */,
 				4DF155C425307E6F00548919 /* Resources */,
@@ -170,9 +302,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DF155E025307E7000548919 /* Build configuration list for PBXNativeTarget "BipBippUITests" */;
 			buildPhases = (
+				48F9EA6ACEE5FDA5C532DEC1 /* [CP] Check Pods Manifest.lock */,
 				4DF155CD25307E7000548919 /* Sources */,
 				4DF155CE25307E7000548919 /* Frameworks */,
 				4DF155CF25307E7000548919 /* Resources */,
+				70AEFED784B94860FCB0535D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DF155C025307E6F00548919 /* LaunchScreen.storyboard in Resources */,
+				4DF1562C2530917E00548919 /* HomeDefaultView.xib in Resources */,
 				4DF155BD25307E6F00548919 /* Assets.xcassets in Resources */,
 				4DF155BB25307E6F00548919 /* Main.storyboard in Resources */,
 			);
@@ -253,14 +388,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F12D8E65B344976A6C72E6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BipBippTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48F9EA6ACEE5FDA5C532DEC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BipBipp-BipBippUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70AEFED784B94860FCB0535D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BipBipp-BipBippUITests/Pods-BipBipp-BipBippUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BipBipp-BipBippUITests/Pods-BipBipp-BipBippUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BipBipp-BipBippUITests/Pods-BipBipp-BipBippUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C22FD75B503F403EBAD2FBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BipBipp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9FC33F86424CEE7F8C070F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BipBipp/Pods-BipBipp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BipBipp/Pods-BipBipp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BipBipp/Pods-BipBipp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4DF155AC25307E6F00548919 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DF155EE25307F3700548919 /* HomeModule.swift in Sources */,
+				4DF1564925309FB200548919 /* CategoryModel.swift in Sources */,
+				4DF1564E2530A45500548919 /* ItemModel.swift in Sources */,
+				4DF1561825308F3000548919 /* HomeDefaultInteractor.swift in Sources */,
+				4DF156062530854C00548919 /* HomeView.swift in Sources */,
+				4DF156012530841F00548919 /* HomeRouter.swift in Sources */,
+				4DF1561025308E9E00548919 /* HomeDefaultPresenter.swift in Sources */,
+				4DF1562B2530917E00548919 /* HomeDefaultView.swift in Sources */,
+				4DF1561D25308F6600548919 /* HomeDefaultRouter.swift in Sources */,
 				4DF155B825307E6F00548919 /* ViewController.swift in Sources */,
 				4DF155B425307E6F00548919 /* AppDelegate.swift in Sources */,
-				4DF155B625307E6F00548919 /* SceneDelegate.swift in Sources */,
+				4DF155FC253083C200548919 /* HomePresenter.swift in Sources */,
+				4DF155F42530839F00548919 /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +681,7 @@
 		};
 		4DF155DB25307E7000548919 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63210FAC1C02ABA7039D1BD0 /* Pods-BipBipp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +701,7 @@
 		};
 		4DF155DC25307E7000548919 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC8EEE803DB7CA8E049BAE61 /* Pods-BipBipp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +721,7 @@
 		};
 		4DF155DE25307E7000548919 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEA982F4366242315298585B /* Pods-BipBippTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +744,7 @@
 		};
 		4DF155DF25307E7000548919 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7586E879705A444307B75412 /* Pods-BipBippTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +767,7 @@
 		};
 		4DF155E125307E7000548919 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87907CEF126ABA2ADB126B8A /* Pods-BipBipp-BipBippUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +788,7 @@
 		};
 		4DF155E225307E7000548919 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8150A21F75CFCAC097EDECDE /* Pods-BipBipp-BipBippUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
