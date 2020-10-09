@@ -10,6 +10,7 @@ import ObjectMapper
 
 class ItemModel: Mappable{
     
+    var id : Int?
     var name : String?
     var description : String?
     var dimension : String?
@@ -21,6 +22,7 @@ class ItemModel: Mappable{
     }
     
     func mapping(map:Map){
+        id <- map["id"]
         name <- map["name"]
         description <- map["description"]
         dimension <- map["dimension"]

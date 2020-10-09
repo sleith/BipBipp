@@ -11,6 +11,4 @@ protocol HomePresenter : class{
     var router : HomeRouter? { get set}
     var interactor : HomeInteractor? { get set}
     var view : HomeView? { get set }
-    
-    func setupViewController()
 }

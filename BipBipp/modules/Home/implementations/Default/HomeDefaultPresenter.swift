@@ -13,11 +13,4 @@ class HomeDefaultPresenter : HomePresenter{
     var interactor: HomeInteractor?
     
     var view: HomeView?
-    
-    
-}
-extension HomeDefaultPresenter{
-    func setupViewController() {
-        
-    }
 }

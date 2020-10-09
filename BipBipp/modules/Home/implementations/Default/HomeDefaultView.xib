@@ -17,32 +17,8 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c0m-Fy-ida">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </tableView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCz-eB-OU2">
-                    <rect key="frame" x="20" y="69" width="33" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="21" id="AsY-9A-kmX"/>
-                        <constraint firstAttribute="width" constant="33" id="MiV-lJ-c4J"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstItem="KCz-eB-OU2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="1xh-yK-9Ah"/>
-                <constraint firstItem="c0m-Fy-ida" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="M7T-5K-nww"/>
-                <constraint firstItem="c0m-Fy-ida" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VtQ-Fv-88q"/>
-                <constraint firstItem="c0m-Fy-ida" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="oTg-4l-4hZ"/>
-                <constraint firstItem="c0m-Fy-ida" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ogO-WT-bzR"/>
-                <constraint firstItem="KCz-eB-OU2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="w8g-kq-zPk"/>
-            </constraints>
             <point key="canvasLocation" x="44.927536231884062" y="110.49107142857143"/>
         </view>
     </objects>

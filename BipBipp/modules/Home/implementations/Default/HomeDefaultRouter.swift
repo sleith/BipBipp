@@ -9,12 +9,11 @@ import Foundation
 import UIKit
 
 class HomeDefaultRouter : HomeRouter{
+    
     var presenter: HomePresenter?
     var viewController: UIViewController?
     
-    func getViewController() -> UIViewController {
-        return HomeModule().buildDefault()
+    func showCartView() {
+        viewController?.navigationController?.pushViewController(CartModule().buildDefault(), animated: true)
     }
-    
-    
 }
