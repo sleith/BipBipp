@@ -10,6 +10,7 @@ import ObjectMapper
 
 class CategoryModel: Mappable{
     
+    var id : Int?
     var title : String?
     
     required init?(map:Map) {
@@ -17,6 +18,7 @@ class CategoryModel: Mappable{
     }
     
     func mapping(map:Map){
+        id <- map["id"]
         title <- map["title"]
     }
 }

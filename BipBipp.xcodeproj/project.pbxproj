@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		10A002B1072A2532D36B8C18 /* Pods_BipBippTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999090FFFC0ACB639699A6BC /* Pods_BipBippTests.framework */; };
+		4D296ECD2531E041001A455C /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D296ECC2531E041001A455C /* CategoryService.swift */; };
+		4D296ED42531E1C6001A455C /* ExtString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D296ED32531E1C6001A455C /* ExtString.swift */; };
+		4D296EDC2531E2C5001A455C /* ItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D296EDB2531E2C5001A455C /* ItemService.swift */; };
 		4DF155B425307E6F00548919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF155B325307E6F00548919 /* AppDelegate.swift */; };
 		4DF155B825307E6F00548919 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF155B725307E6F00548919 /* ViewController.swift */; };
 		4DF155BB25307E6F00548919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF155B925307E6F00548919 /* Main.storyboard */; };
@@ -72,6 +75,9 @@
 
 /* Begin PBXFileReference section */
 		07608B4A7925AC8FCE82C543 /* Pods_BipBipp_BipBippUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BipBipp_BipBippUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D296ECC2531E041001A455C /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
+		4D296ED32531E1C6001A455C /* ExtString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtString.swift; sourceTree = "<group>"; };
+		4D296EDB2531E2C5001A455C /* ItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemService.swift; sourceTree = "<group>"; };
 		4DF155B025307E6F00548919 /* BipBipp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BipBipp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF155B325307E6F00548919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DF155B725307E6F00548919 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +163,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D296ED12531E1A2001A455C /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				4D296ED22531E1AA001A455C /* extensions */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		4D296ED22531E1AA001A455C /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4D296ED32531E1C6001A455C /* ExtString.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		4DF155A725307E6F00548919 = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +204,7 @@
 		4DF155B225307E6F00548919 /* BipBipp */ = {
 			isa = PBXGroup;
 			children = (
+				4D296ED12531E1A2001A455C /* utils */,
 				4DF156522530AABC00548919 /* storage */,
 				4DF155EA25307EC700548919 /* entities */,
 				4DF155E925307E9100548919 /* services */,
@@ -217,6 +240,8 @@
 		4DF155E925307E9100548919 /* services */ = {
 			isa = PBXGroup;
 			children = (
+				4D296ECC2531E041001A455C /* CategoryService.swift */,
+				4D296EDB2531E2C5001A455C /* ItemService.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -648,6 +673,7 @@
 				4DF156012530841F00548919 /* HomeRouter.swift in Sources */,
 				4DF1569A2530B4F400548919 /* MenuModule.swift in Sources */,
 				4DF156F32530B8B800548919 /* CartView.swift in Sources */,
+				4D296EDC2531E2C5001A455C /* ItemService.swift in Sources */,
 				4DF1561025308E9E00548919 /* HomeDefaultPresenter.swift in Sources */,
 				4DF156B92530B65D00548919 /* MenuDefaultPresenter.swift in Sources */,
 				4DF156A52530B57600548919 /* MenuPresenter.swift in Sources */,
@@ -667,6 +693,8 @@
 				4DF156AF2530B5A100548919 /* MenuRouter.swift in Sources */,
 				4DF155FC253083C200548919 /* HomePresenter.swift in Sources */,
 				4DF156C32530B6B800548919 /* MenuDefaultRouter.swift in Sources */,
+				4D296ECD2531E041001A455C /* CategoryService.swift in Sources */,
+				4D296ED42531E1C6001A455C /* ExtString.swift in Sources */,
 				4DF155F42530839F00548919 /* HomeInteractor.swift in Sources */,
 				4DF156E92530B8A300548919 /* CartInteractor.swift in Sources */,
 			);
