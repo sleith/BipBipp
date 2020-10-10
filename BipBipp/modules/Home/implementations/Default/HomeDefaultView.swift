@@ -18,15 +18,21 @@ class HomeDefaultView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         let nib = UINib.init(nibName: "HomeItemTableViewCell", bundle: nil)
         mTableView.register(nib, forCellReuseIdentifier: "cell")
         mTableView.dataSource = self
         mTableView.delegate = self
+        mTableView.separatorStyle = .none
         
         presenter?.fetchCategories()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
 }
 extension HomeDefaultView : HomeView{
     func displayCategories(categories: [CategoryModel]) {
