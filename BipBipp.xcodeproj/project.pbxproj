@@ -11,6 +11,14 @@
 		4D296ECD2531E041001A455C /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D296ECC2531E041001A455C /* CategoryService.swift */; };
 		4D296ED42531E1C6001A455C /* ExtString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D296ED32531E1C6001A455C /* ExtString.swift */; };
 		4D296EDC2531E2C5001A455C /* ItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D296EDB2531E2C5001A455C /* ItemService.swift */; };
+		4D296EE12531F6FF001A455C /* ExtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D296EE02531F6FF001A455C /* ExtView.swift */; };
+		4D296EE625320062001A455C /* ExtData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D296EE525320062001A455C /* ExtData.swift */; };
+		4D296F0725320DAC001A455C /* HomeItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D296F0525320DAC001A455C /* HomeItemTableViewCell.swift */; };
+		4D296F0825320DAC001A455C /* HomeItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D296F0625320DAC001A455C /* HomeItemTableViewCell.xib */; };
+		4D296F0E25320E0B001A455C /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D296F0D25320E0B001A455C /* RoundedView.swift */; };
+		4D296F1625320F7E001A455C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D296F1525320F7E001A455C /* RoundedButton.swift */; };
+		4D296F29253214AA001A455C /* RoundedTopImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D296F28253214AA001A455C /* RoundedTopImageView.swift */; };
+		4D296F322532158C001A455C /* ConfigData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D296F312532158C001A455C /* ConfigData.swift */; };
 		4DF155B425307E6F00548919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF155B325307E6F00548919 /* AppDelegate.swift */; };
 		4DF155B825307E6F00548919 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF155B725307E6F00548919 /* ViewController.swift */; };
 		4DF155BB25307E6F00548919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF155B925307E6F00548919 /* Main.storyboard */; };
@@ -78,6 +86,14 @@
 		4D296ECC2531E041001A455C /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
 		4D296ED32531E1C6001A455C /* ExtString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtString.swift; sourceTree = "<group>"; };
 		4D296EDB2531E2C5001A455C /* ItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemService.swift; sourceTree = "<group>"; };
+		4D296EE02531F6FF001A455C /* ExtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtView.swift; sourceTree = "<group>"; };
+		4D296EE525320062001A455C /* ExtData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtData.swift; sourceTree = "<group>"; };
+		4D296F0525320DAC001A455C /* HomeItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemTableViewCell.swift; sourceTree = "<group>"; };
+		4D296F0625320DAC001A455C /* HomeItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeItemTableViewCell.xib; sourceTree = "<group>"; };
+		4D296F0D25320E0B001A455C /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		4D296F1525320F7E001A455C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		4D296F28253214AA001A455C /* RoundedTopImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTopImageView.swift; sourceTree = "<group>"; };
+		4D296F312532158C001A455C /* ConfigData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigData.swift; sourceTree = "<group>"; };
 		4DF155B025307E6F00548919 /* BipBipp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BipBipp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF155B325307E6F00548919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DF155B725307E6F00548919 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +182,7 @@
 		4D296ED12531E1A2001A455C /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				4D296F0C25320E03001A455C /* views */,
 				4D296ED22531E1AA001A455C /* extensions */,
 			);
 			path = utils;
@@ -175,8 +192,37 @@
 			isa = PBXGroup;
 			children = (
 				4D296ED32531E1C6001A455C /* ExtString.swift */,
+				4D296EE02531F6FF001A455C /* ExtView.swift */,
+				4D296EE525320062001A455C /* ExtData.swift */,
 			);
 			path = extensions;
+			sourceTree = "<group>";
+		};
+		4D296EF725320C9D001A455C /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				4D296F0525320DAC001A455C /* HomeItemTableViewCell.swift */,
+				4D296F0625320DAC001A455C /* HomeItemTableViewCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		4D296F0C25320E03001A455C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				4D296F0D25320E0B001A455C /* RoundedView.swift */,
+				4D296F1525320F7E001A455C /* RoundedButton.swift */,
+				4D296F28253214AA001A455C /* RoundedTopImageView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		4D296F3025321583001A455C /* configs */ = {
+			isa = PBXGroup;
+			children = (
+				4D296F312532158C001A455C /* ConfigData.swift */,
+			);
+			path = configs;
 			sourceTree = "<group>";
 		};
 		4DF155A725307E6F00548919 = {
@@ -204,6 +250,7 @@
 		4DF155B225307E6F00548919 /* BipBipp */ = {
 			isa = PBXGroup;
 			children = (
+				4D296F3025321583001A455C /* configs */,
 				4D296ED12531E1A2001A455C /* utils */,
 				4DF156522530AABC00548919 /* storage */,
 				4DF155EA25307EC700548919 /* entities */,
@@ -298,6 +345,7 @@
 		4DF1560E25308E7D00548919 /* Default */ = {
 			isa = PBXGroup;
 			children = (
+				4D296EF725320C9D001A455C /* cells */,
 				4DF1560F25308E9E00548919 /* HomeDefaultPresenter.swift */,
 				4DF1561725308F3000548919 /* HomeDefaultInteractor.swift */,
 				4DF1561C25308F6600548919 /* HomeDefaultRouter.swift */,
@@ -530,6 +578,7 @@
 			files = (
 				4DF156D22530B72500548919 /* MenuDefaultView.xib in Resources */,
 				4DF155C025307E6F00548919 /* LaunchScreen.storyboard in Resources */,
+				4D296F0825320DAC001A455C /* HomeItemTableViewCell.xib in Resources */,
 				4DF1570B2530B90D00548919 /* CartDefaultView.xib in Resources */,
 				4DF1562C2530917E00548919 /* HomeDefaultView.xib in Resources */,
 				4DF155BD25307E6F00548919 /* Assets.xcassets in Resources */,
@@ -669,6 +718,7 @@
 				4DF156E12530B89800548919 /* CartPresenter.swift in Sources */,
 				4DF1561825308F3000548919 /* HomeDefaultInteractor.swift in Sources */,
 				4DF156062530854C00548919 /* HomeView.swift in Sources */,
+				4D296F0E25320E0B001A455C /* RoundedView.swift in Sources */,
 				4DF156B42530B5E300548919 /* MenuView.swift in Sources */,
 				4DF156012530841F00548919 /* HomeRouter.swift in Sources */,
 				4DF1569A2530B4F400548919 /* MenuModule.swift in Sources */,
@@ -677,13 +727,17 @@
 				4DF1561025308E9E00548919 /* HomeDefaultPresenter.swift in Sources */,
 				4DF156B92530B65D00548919 /* MenuDefaultPresenter.swift in Sources */,
 				4DF156A52530B57600548919 /* MenuPresenter.swift in Sources */,
+				4D296F0725320DAC001A455C /* HomeItemTableViewCell.swift in Sources */,
 				4DF156AA2530B58A00548919 /* MenuInteractor.swift in Sources */,
 				4DF156D82530B84F00548919 /* CartModule.swift in Sources */,
+				4D296F29253214AA001A455C /* RoundedTopImageView.swift in Sources */,
 				4DF1570A2530B90D00548919 /* CartDefaultView.swift in Sources */,
 				4DF156D12530B72500548919 /* MenuDefaultView.swift in Sources */,
 				4DF156592530AC0E00548919 /* CartStorage.swift in Sources */,
 				4DF156FF2530B8E600548919 /* CartDefaultInteractor.swift in Sources */,
 				4DF1562B2530917E00548919 /* HomeDefaultView.swift in Sources */,
+				4D296F322532158C001A455C /* ConfigData.swift in Sources */,
+				4D296F1625320F7E001A455C /* RoundedButton.swift in Sources */,
 				4DF156EE2530B8AD00548919 /* CartRouter.swift in Sources */,
 				4DF156FA2530B8D500548919 /* CartDefaultPresenter.swift in Sources */,
 				4DF1561D25308F6600548919 /* HomeDefaultRouter.swift in Sources */,
@@ -694,9 +748,11 @@
 				4DF155FC253083C200548919 /* HomePresenter.swift in Sources */,
 				4DF156C32530B6B800548919 /* MenuDefaultRouter.swift in Sources */,
 				4D296ECD2531E041001A455C /* CategoryService.swift in Sources */,
+				4D296EE625320062001A455C /* ExtData.swift in Sources */,
 				4D296ED42531E1C6001A455C /* ExtString.swift in Sources */,
 				4DF155F42530839F00548919 /* HomeInteractor.swift in Sources */,
 				4DF156E92530B8A300548919 /* CartInteractor.swift in Sources */,
+				4D296EE12531F6FF001A455C /* ExtView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,13 +7,74 @@
 
 import UIKit
 
-class HomeDefaultView: UIViewController, HomeView {
+class HomeDefaultView: UIViewController {
     var presenter: HomePresenter?
 
+    @IBOutlet weak var mTableView: UITableView!
+    
+    var mCategories : [CategoryModel] = []
+    var mCurrCategory : CategoryModel? = nil
+    var mItemList : [ItemModel] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let nib = UINib.init(nibName: "HomeItemTableViewCell", bundle: nil)
+        mTableView.register(nib, forCellReuseIdentifier: "cell")
+        mTableView.dataSource = self
+        mTableView.delegate = self
+        
+        presenter?.fetchCategories()
     }
 
+}
+extension HomeDefaultView : HomeView{
+    func displayCategories(categories: [CategoryModel]) {
+        mCategories = categories
+        mCurrCategory = categories.first
+        mTableView.reloadData()
+        
+        if let category = mCurrCategory{
+            presenter?.fetchItems(categoryId: category.id ?? 0)
+        }
+    }
+    
+    func displayItems(items: [ItemModel], categoryId: Int) {
+        mItemList = items
+        mTableView.reloadData()
+    }
+}
+extension HomeDefaultView : UITableViewDataSource{
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        if(section == 0){
+//            return mCategories.count
+//        }else{
+//            return mItemList.count
+//        }
+        return mItemList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        if(indexPath.section == 0){
+//
+//        }else{
+//
+//        }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! HomeItemTableViewCell
+        let item = mItemList[indexPath.row]
+        cell.update(item: item)
+        cell.selectionStyle = .none
+        return cell
+    }
+    
+    
+}
+extension HomeDefaultView : UITableViewDelegate{
+    
 }

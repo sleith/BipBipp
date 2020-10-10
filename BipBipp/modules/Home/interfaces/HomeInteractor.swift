@@ -6,7 +6,12 @@
 //
 
 import Foundation
+import RxSwift
+import Moya
 
 protocol HomeInteractor{
     var presenter : HomePresenter? { get set }
+    
+    func fetchCategories()->Observable<[CategoryModel]>
+    func fetchItems(categoryId:Int)->Observable<[ItemModel]>
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 extension String{
-    var encodeToData : Data? {
+    var toData : Data? {
         return self.data(using: String.Encoding.utf8)
     }
 }

@@ -19,7 +19,7 @@ class CartStorage{
     init() {
         if let raw = preferences.string(forKey: KEY_NAME){
             if(raw.count > 0){
-                cartList = Mapper<CartModel>().mapArray(JSONObject: raw) ?? []
+                cartList = Mapper<CartModel>().mapArray(JSONString: raw) ?? []
             }
         }
     }

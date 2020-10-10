@@ -11,4 +11,6 @@ import UIKit
 protocol HomeView : class {
     var presenter : HomePresenter? { get set }
 
+    func displayCategories(categories:[CategoryModel])
+    func displayItems(items:[ItemModel], categoryId:Int)
 }

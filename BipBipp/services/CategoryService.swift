@@ -14,7 +14,7 @@ enum CategoryService{
 
 extension CategoryService : TargetType{
     var baseURL: URL {
-        let url = "https://www.bipbipp.com/api/v1"
+        let url = ConfigData.API_BASE_URL
         return URL(string: url)!
     }
     
@@ -32,7 +32,7 @@ extension CategoryService : TargetType{
     var sampleData: Data {
         switch self{
         case .getCategories:
-            return "[{\"id\":1, \"title\":\"Sushi\"}, {\"id\":2, \"title\":\"Drinks\"}, {\"id\":3, \"title\":\"Pizza\"}]".encodeToData ?? Data()
+            return "[{\"id\":1, \"title\":\"Sushi\"}, {\"id\":2, \"title\":\"Drinks\"}, {\"id\":3, \"title\":\"Pizza\"}]".toData ?? Data()
         }
     }
     

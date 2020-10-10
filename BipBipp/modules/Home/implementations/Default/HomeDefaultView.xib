@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeDefaultView" customModule="BipBipp" customModuleProvider="target">
             <connections>
+                <outlet property="mTableView" destination="OBV-7d-9dU" id="Hu0-K3-qaA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,8 +18,20 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OBV-7d-9dU">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="OBV-7d-9dU" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="7qg-N5-CvJ"/>
+                <constraint firstItem="OBV-7d-9dU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Dgh-Yu-nzo"/>
+                <constraint firstItem="OBV-7d-9dU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UVY-BX-jx1"/>
+                <constraint firstItem="OBV-7d-9dU" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="gv1-pF-3MG"/>
+            </constraints>
             <point key="canvasLocation" x="44.927536231884062" y="110.49107142857143"/>
         </view>
     </objects>

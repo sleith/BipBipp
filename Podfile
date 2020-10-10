@@ -10,7 +10,8 @@ target 'BipBipp' do
   pod 'RxCocoa', '~> 5.0'
   pod 'Moya/RxSwift', '~> 14.0'
   pod 'ObjectMapper', '~> 3.5'
-  pod 'Parchment'
+  pod 'ParallaxHeader', '~> 3.0.0'
+  pod 'Kingfisher'
   
   target 'BipBippTests' do
     inherit! :search_paths
