@@ -2,6 +2,8 @@
  
 Simple iOS app using VIPER architecture
 
+  <img src="https://www.fatdino.com/gifs/bipbipp.gif" alt="BipBipp" />
+
 # Features
   - Carousel banners
   - Categories and Menu items
