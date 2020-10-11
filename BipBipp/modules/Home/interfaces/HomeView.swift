@@ -13,4 +13,5 @@ protocol HomeView : class {
 
     func displayCategories(categories:[CategoryModel])
     func displayItems(items:[ItemModel], categoryId:Int)
+    func displayBanners(banners:[BannerModel])
 }

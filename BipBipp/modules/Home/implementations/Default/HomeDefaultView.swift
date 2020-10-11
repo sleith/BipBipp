@@ -6,12 +6,16 @@
 //
 
 import UIKit
+import ParallaxHeader
+import ImageSlideshow
+import Kingfisher
 
 class HomeDefaultView: UIViewController {
     var presenter: HomePresenter?
 
     @IBOutlet weak var mTableView: UITableView!
     @IBOutlet weak var mBtnCart: CartButton!
+    var mCarouselView : ImageSlideshow!
     
     var mCategories : [CategoryModel] = []
     var mCurrCategory : CategoryModel? = nil
@@ -28,7 +32,25 @@ class HomeDefaultView: UIViewController {
         mTableView.delegate = self
         mTableView.separatorStyle = .none
         
+        mCarouselView = ImageSlideshow()
+        mCarouselView.slideshowInterval = 5.0
+        mCarouselView.pageIndicatorPosition = .init(horizontal: .center, vertical: .under)
+        mCarouselView.contentScaleMode = UIViewContentMode.scaleAspectFill
+
+        let pageControl = UIPageControl()
+        pageControl.currentPageIndicatorTintColor = UIColor.lightGray
+        pageControl.pageIndicatorTintColor = UIColor.black
+        mCarouselView.pageIndicator = pageControl
+        mCarouselView.pageIndicatorPosition = PageIndicatorPosition(horizontal: .center, vertical: .bottom)
+        mCarouselView.activityIndicator = DefaultActivityIndicator()
+        
+        mTableView.parallaxHeader.view = mCarouselView
+        mTableView.parallaxHeader.height = 400
+        mTableView.parallaxHeader.minimumHeight = 0
+        mTableView.parallaxHeader.mode = .centerFill
+
         presenter?.fetchCategories()
+        presenter?.fetchBanners()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -43,6 +65,17 @@ class HomeDefaultView: UIViewController {
     }
 }
 extension HomeDefaultView : HomeView{
+    func displayBanners(banners: [BannerModel]) {
+        var inputSource:[KingfisherSource] = []
+        for curr in banners{
+            if let source = KingfisherSource(urlString: curr.imageUrl ?? ""){
+                inputSource.append(source)
+            }
+        }
+        mCarouselView.setImageInputs(inputSource)
+
+    }
+    
     func displayCategories(categories: [CategoryModel]) {
         mCategories = categories
         mCurrCategory = categories.first

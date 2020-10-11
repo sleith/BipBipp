@@ -17,6 +17,9 @@ class HomeDefaultInteractor : HomeInteractor{
     
     fileprivate let providerItem = MoyaProvider<ItemService>(stubClosure: MoyaProvider.immediatelyStub, plugins: [NetworkLoggerPlugin()])
     
+    fileprivate let providerBanner = MoyaProvider<BannerService>(stubClosure: MoyaProvider.immediatelyStub, plugins: [NetworkLoggerPlugin()])
+
+    
     func fetchCategories() -> Observable<[CategoryModel]> {
         return Observable.create { observer->Disposable in
             self.providerCategory.rx.request(.getCategories(())).subscribe { event in
@@ -41,6 +44,24 @@ class HomeDefaultInteractor : HomeInteractor{
                 switch event {
                 case let .success(response):
                     let itemList = Mapper<ItemModel>().mapArray(JSONString: response.data.toString) ?? []
+                    
+                    observer.onNext(itemList)
+                    
+                case let .error(error):
+                    //in this sample, it will always success
+                    print(error)
+                }
+                observer.onCompleted()
+            }
+        }
+    }
+    
+    func fetchBanners() -> Observable<[BannerModel]> {
+        return Observable.create { observer->Disposable in
+            self.providerBanner.rx.request(.getBanners(())).subscribe { event in
+                switch event {
+                case let .success(response):
+                    let itemList = Mapper<BannerModel>().mapArray(JSONString: response.data.toString) ?? []
                     
                     observer.onNext(itemList)
                     

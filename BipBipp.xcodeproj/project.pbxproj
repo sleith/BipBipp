@@ -24,6 +24,8 @@
 		4D9195B625329E5F006A40CB /* ExtNotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9195B525329E5F006A40CB /* ExtNotificationNames.swift */; };
 		4D9195BD2532A4FD006A40CB /* CartItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9195BB2532A4FD006A40CB /* CartItemTableViewCell.swift */; };
 		4D9195BE2532A4FD006A40CB /* CartItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D9195BC2532A4FD006A40CB /* CartItemTableViewCell.xib */; };
+		4D9196512532D78A006A40CB /* BannerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9196502532D78A006A40CB /* BannerService.swift */; };
+		4D9196562532D7A7006A40CB /* BannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9196552532D7A7006A40CB /* BannerModel.swift */; };
 		4DF155B425307E6F00548919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF155B325307E6F00548919 /* AppDelegate.swift */; };
 		4DF155B825307E6F00548919 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF155B725307E6F00548919 /* ViewController.swift */; };
 		4DF155BB25307E6F00548919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF155B925307E6F00548919 /* Main.storyboard */; };
@@ -104,6 +106,8 @@
 		4D9195B525329E5F006A40CB /* ExtNotificationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtNotificationNames.swift; sourceTree = "<group>"; };
 		4D9195BB2532A4FD006A40CB /* CartItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemTableViewCell.swift; sourceTree = "<group>"; };
 		4D9195BC2532A4FD006A40CB /* CartItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartItemTableViewCell.xib; sourceTree = "<group>"; };
+		4D9196502532D78A006A40CB /* BannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerService.swift; sourceTree = "<group>"; };
+		4D9196552532D7A7006A40CB /* BannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerModel.swift; sourceTree = "<group>"; };
 		4DF155B025307E6F00548919 /* BipBipp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BipBipp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF155B325307E6F00548919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DF155B725307E6F00548919 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -319,6 +323,7 @@
 			children = (
 				4D296ECC2531E041001A455C /* CategoryService.swift */,
 				4D296EDB2531E2C5001A455C /* ItemService.swift */,
+				4D9196502532D78A006A40CB /* BannerService.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 				4DF1564825309FB200548919 /* CategoryModel.swift */,
 				4DF1564D2530A45500548919 /* ItemModel.swift */,
 				4DF156532530ABA600548919 /* CartModel.swift */,
+				4D9196552532D7A7006A40CB /* BannerModel.swift */,
 			);
 			path = entities;
 			sourceTree = "<group>";
@@ -763,7 +769,9 @@
 				4D296F0725320DAC001A455C /* HomeItemTableViewCell.swift in Sources */,
 				4DF156AA2530B58A00548919 /* MenuInteractor.swift in Sources */,
 				4DF156D82530B84F00548919 /* CartModule.swift in Sources */,
+				4D9196512532D78A006A40CB /* BannerService.swift in Sources */,
 				4D296F4125328D6E001A455C /* ExtButton.swift in Sources */,
+				4D9196562532D7A7006A40CB /* BannerModel.swift in Sources */,
 				4D296F29253214AA001A455C /* RoundedTopImageView.swift in Sources */,
 				4DF1570A2530B90D00548919 /* CartDefaultView.swift in Sources */,
 				4DF156D12530B72500548919 /* MenuDefaultView.swift in Sources */,

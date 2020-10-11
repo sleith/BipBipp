@@ -12,6 +12,8 @@ target 'BipBipp' do
   pod 'ObjectMapper', '~> 3.5'
   pod 'ParallaxHeader', '~> 3.0.0'
   pod 'Kingfisher'
+  pod 'ImageSlideshow', '~> 1.9.0'
+  pod "ImageSlideshow/Kingfisher"
   
   target 'BipBippTests' do
     inherit! :search_paths

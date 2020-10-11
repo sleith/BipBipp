@@ -59,6 +59,25 @@ extension HomeDefaultPresenter{
             ).disposed(by: diseposeBag)
     }
     
+    func fetchBanners() {
+        interactor?.fetchBanners()
+            .subscribeOn(SerialDispatchQueueScheduler(qos: .background))
+            .observeOn(MainScheduler.instance)
+            .subscribe(
+                onNext: { (result: [
+                           BannerModel]) in
+                    self.view?.displayBanners(banners: result)
+                    
+                }, onError: { (Error) in
+                    
+                }, onCompleted: {
+
+                }, onDisposed: {
+                    
+                }
+            ).disposed(by: diseposeBag)
+    }
+    
     func addItem(item: ItemModel) {
         interactor?.addItem(item: item)
     }

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,11 +20,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OBV-7d-9dU">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9d0-eg-va4" customClass="CartButton" customModule="BipBipp" customModuleProvider="target">
-                    <rect key="frame" x="354" y="802" width="40" height="40"/>
+                    <rect key="frame" x="354" y="836" width="40" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="40" id="6Z3-h0-xaX"/>
@@ -38,15 +37,14 @@
                     </connections>
                 </button>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="OBV-7d-9dU" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="7qg-N5-CvJ"/>
-                <constraint firstItem="OBV-7d-9dU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Dgh-Yu-nzo"/>
-                <constraint firstItem="OBV-7d-9dU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UVY-BX-jx1"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9d0-eg-va4" secondAttribute="bottom" constant="20" id="ai2-3n-2Vq"/>
-                <constraint firstItem="OBV-7d-9dU" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="gv1-pF-3MG"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9d0-eg-va4" secondAttribute="trailing" constant="20" id="mIq-hB-aPc"/>
+                <constraint firstItem="OBV-7d-9dU" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="7qg-N5-CvJ"/>
+                <constraint firstItem="OBV-7d-9dU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UVY-BX-jx1"/>
+                <constraint firstAttribute="bottom" secondItem="9d0-eg-va4" secondAttribute="bottom" constant="20" id="ai2-3n-2Vq"/>
+                <constraint firstItem="OBV-7d-9dU" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="gv1-pF-3MG"/>
+                <constraint firstItem="OBV-7d-9dU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jlW-vK-jev"/>
+                <constraint firstAttribute="trailing" secondItem="9d0-eg-va4" secondAttribute="trailing" constant="20" id="mIq-hB-aPc"/>
             </constraints>
             <point key="canvasLocation" x="44.927536231884062" y="110.49107142857143"/>
         </view>

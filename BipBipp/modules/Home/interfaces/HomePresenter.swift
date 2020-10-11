@@ -15,6 +15,7 @@ protocol HomePresenter : class{
     //Interaction with Interactor
     func fetchCategories()
     func fetchItems(categoryId:Int)
+    func fetchBanners()
     func addItem(item:ItemModel)
 
     //Interaction with Router
