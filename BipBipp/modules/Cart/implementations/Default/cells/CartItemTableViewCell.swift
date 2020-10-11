@@ -32,6 +32,7 @@ class CartItemTableViewCell: UITableViewCell {
         self.mCallback = callback
         self.mCart = cart
         
+        mIvImage.kf.indicatorType = .activity
         mIvImage.kf.setImage(with:URL(string: cart.item?.imageUrl ?? ""))
         mLblName.text = (cart.item?.name ?? "") + "\nx" + (cart.qty?.description ?? "")
         mLblPrice.text = "$\(cart.totalPrice().description)"

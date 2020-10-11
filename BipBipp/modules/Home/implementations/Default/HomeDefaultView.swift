@@ -37,20 +37,40 @@ class HomeDefaultView: UIViewController {
         mTableView.delegate = self
         mTableView.separatorStyle = .none
         
-        mCarouselView = ImageSlideshow()
+        let parallaxHeight : CGFloat = self.view.frame.height * 0.5
+
+        /// setup carousel
+        mCarouselView = ImageSlideshow(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: parallaxHeight))
         mCarouselView.slideshowInterval = 5.0
         mCarouselView.pageIndicatorPosition = .init(horizontal: .center, vertical: .under)
         mCarouselView.contentScaleMode = UIViewContentMode.scaleAspectFill
 
         let pageControl = UIPageControl()
-        pageControl.currentPageIndicatorTintColor = UIColor.lightGray
-        pageControl.pageIndicatorTintColor = UIColor.black
+        pageControl.currentPageIndicatorTintColor = UIColor.white
+        pageControl.pageIndicatorTintColor = UIColor.lightGray
         mCarouselView.pageIndicator = pageControl
         mCarouselView.pageIndicatorPosition = PageIndicatorPosition(horizontal: .center, vertical: .bottom)
         mCarouselView.activityIndicator = DefaultActivityIndicator()
+        ////////
         
-        mTableView.parallaxHeader.view = mCarouselView
-        mTableView.parallaxHeader.height = 400
+        /// setup logo
+        let lblApp = UILabel.init(frame: CGRect.init(x: 0, y: 10, width: 0, height: 0))
+        lblApp.text = "- BipBipp -\nIt's Ready!"
+        lblApp.lineBreakMode = .byWordWrapping
+        lblApp.numberOfLines = 0
+        lblApp.textAlignment = .center
+        lblApp.textColor = UIColor.white
+        lblApp.font = UIFont.boldSystemFont(ofSize: 20)
+        lblApp.sizeToFit()
+        lblApp.frame.origin.x = (self.view.frame.size.width - lblApp.frame.width) / 2
+        ////
+        
+        let headerView = UIView.init(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: parallaxHeight))
+        headerView.addSubview(mCarouselView)
+        headerView.addSubview(lblApp)
+        
+        mTableView.parallaxHeader.view = headerView
+        mTableView.parallaxHeader.height = parallaxHeight
         mTableView.parallaxHeader.minimumHeight = 0
         mTableView.parallaxHeader.mode = .centerFill
 

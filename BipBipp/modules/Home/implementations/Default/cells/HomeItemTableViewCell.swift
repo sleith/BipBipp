@@ -34,6 +34,7 @@ class HomeItemTableViewCell: UITableViewCell {
         self.mCallback = callback
         self.mItem = item
         
+        mIvImage.kf.indicatorType = .activity
         mIvImage.kf.setImage(with:URL(string: item.imageUrl ?? ""))
         mLblTitle.text = item.name
         mLblDescription.text = item.description

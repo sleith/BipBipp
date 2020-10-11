@@ -33,7 +33,7 @@ extension BannerService : TargetType{
     var sampleData: Data {
         switch self{
         case .getBanners:
-            return "[{\"id\":1, \"title\":\"Banner 1\", \"description\":\"Test banner 1\" ,\"imageUrl\":\"https://www.manilaonsale.com/wp-content/uploads/2017/06/brothersburger.jpg\"},{\"id\":2, \"title\":\"Banner 2\", \"description\":\"Test banner 2\" ,\"imageUrl\":\"https://previews.agefotostock.com/previewimage/medibigoff/9577c57f8721108c4fadf3bdf5e6dbb3/esy-044038877.jpg\"},{\"id\":3, \"title\":\"Banner 3\", \"description\":\"Test banner 3\" ,\"imageUrl\":\"http://ui.ssgcdn.com/cmpt/starfield/event/201806/28/IM20180628050433965263.jpg\"}]".toData ?? Data()
+            return "[{\"id\":1, \"title\":\"Banner 1\", \"description\":\"Test banner 1\" ,\"imageUrl\":\"https://i.pinimg.com/originals/2a/bd/79/2abd792a12fd392768fb213078e768f0.jpg\"},{\"id\":2, \"title\":\"Banner 2\", \"description\":\"Test banner 2\" ,\"imageUrl\":\"https://i.pinimg.com/originals/2c/75/73/2c757312d0d9050058c646da711dd5f8.jpg\"},{\"id\":3, \"title\":\"Banner 3\", \"description\":\"Test banner 3\" ,\"imageUrl\":\"https://ak.picdn.net/offset/photos/5f11c057a75ca0db3709998d/medium/offset_970323.jpg\"}]".toData ?? Data()
         }
     }
     
