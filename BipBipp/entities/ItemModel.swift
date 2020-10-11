@@ -29,4 +29,8 @@ class ItemModel: Mappable{
         price <- map["price"]
         imageUrl <- map["imageUrl"]
     }
+    
+    func priceString()->String{
+        return "$" + (price?.description ?? "")
+    }
 }

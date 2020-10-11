@@ -30,4 +30,8 @@ class CartModel: Mappable{
     func incrementQty(){
         self.qty = (self.qty ?? 0) + 1
     }
+    
+    func totalPrice()->Double{
+        return Double((qty ?? 0)) * (item?.price ?? 0)
+    }
 }

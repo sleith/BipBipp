@@ -14,4 +14,5 @@ protocol HomeInteractor{
     
     func fetchCategories()->Observable<[CategoryModel]>
     func fetchItems(categoryId:Int)->Observable<[ItemModel]>
+    func addItem(item:ItemModel)
 }

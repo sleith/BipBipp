@@ -67,6 +67,28 @@ class CartStorage{
     private func save(){
         preferences.set(cartList.toJSONString(), forKey: KEY_NAME)
         preferences.synchronize()
+        
+        NotificationCenter.default.post(name: .cartChanges, object: nil)
+    }
+    
+    func totalItemCount()->Int{
+        var total = 0
+        synchronized(self) {
+            for curr in cartList{
+                total += (curr.qty ?? 0)
+            }
+        }
+        return total
+    }
+    
+    func totalPrice()->Double{
+        var total = 0.0
+        synchronized(self) {
+            for curr in cartList{
+                total += curr.totalPrice()
+            }
+        }
+        return total
     }
     
     /**

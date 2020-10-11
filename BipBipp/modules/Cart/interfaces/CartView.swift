@@ -11,4 +11,6 @@ import UIKit
 protocol CartView : class {
     var presenter : CartPresenter? { get set }
 
+    func showCart(cartList:[CartModel])
+    func showTotalPrice(price:Double)
 }

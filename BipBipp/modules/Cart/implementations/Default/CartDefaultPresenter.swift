@@ -15,3 +15,17 @@ class CartDefaultPresenter : CartPresenter{
     var view: CartView?
     
 }
+//to Interactor
+extension CartDefaultPresenter{
+    func loadData() {
+        let cartList = interactor?.load() ?? []
+        view?.showCart(cartList: cartList)
+        view?.showTotalPrice(price: interactor?.getTotalPrice() ?? 0)
+    }
+    
+    func removeCart(cart: CartModel) {
+        let cartList = interactor?.removeCart(cart: cart) ?? []
+        view?.showCart(cartList: cartList)
+        view?.showTotalPrice(price: interactor?.getTotalPrice() ?? 0)
+    }
+}

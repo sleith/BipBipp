@@ -12,7 +12,11 @@ protocol HomePresenter : class{
     var interactor : HomeInteractor? { get set}
     var view : HomeView? { get set }
     
+    //Interaction with Interactor
     func fetchCategories()
     func fetchItems(categoryId:Int)
+    func addItem(item:ItemModel)
 
+    //Interaction with Router
+    func routeToCartScreen()
 }

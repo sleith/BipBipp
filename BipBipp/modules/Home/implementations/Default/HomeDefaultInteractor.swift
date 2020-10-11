@@ -52,4 +52,8 @@ class HomeDefaultInteractor : HomeInteractor{
             }
         }
     }
+    
+    func addItem(item: ItemModel) {
+        CartStorage.instance.addItem(item: item)
+    }
 }

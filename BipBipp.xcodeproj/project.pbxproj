@@ -19,6 +19,11 @@
 		4D296F1625320F7E001A455C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D296F1525320F7E001A455C /* RoundedButton.swift */; };
 		4D296F29253214AA001A455C /* RoundedTopImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D296F28253214AA001A455C /* RoundedTopImageView.swift */; };
 		4D296F322532158C001A455C /* ConfigData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D296F312532158C001A455C /* ConfigData.swift */; };
+		4D296F4125328D6E001A455C /* ExtButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D296F4025328D6E001A455C /* ExtButton.swift */; };
+		4D9195B1253298E9006A40CB /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9195B0253298E9006A40CB /* CartButton.swift */; };
+		4D9195B625329E5F006A40CB /* ExtNotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9195B525329E5F006A40CB /* ExtNotificationNames.swift */; };
+		4D9195BD2532A4FD006A40CB /* CartItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9195BB2532A4FD006A40CB /* CartItemTableViewCell.swift */; };
+		4D9195BE2532A4FD006A40CB /* CartItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D9195BC2532A4FD006A40CB /* CartItemTableViewCell.xib */; };
 		4DF155B425307E6F00548919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF155B325307E6F00548919 /* AppDelegate.swift */; };
 		4DF155B825307E6F00548919 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF155B725307E6F00548919 /* ViewController.swift */; };
 		4DF155BB25307E6F00548919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF155B925307E6F00548919 /* Main.storyboard */; };
@@ -94,6 +99,11 @@
 		4D296F1525320F7E001A455C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		4D296F28253214AA001A455C /* RoundedTopImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTopImageView.swift; sourceTree = "<group>"; };
 		4D296F312532158C001A455C /* ConfigData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigData.swift; sourceTree = "<group>"; };
+		4D296F4025328D6E001A455C /* ExtButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtButton.swift; sourceTree = "<group>"; };
+		4D9195B0253298E9006A40CB /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		4D9195B525329E5F006A40CB /* ExtNotificationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtNotificationNames.swift; sourceTree = "<group>"; };
+		4D9195BB2532A4FD006A40CB /* CartItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemTableViewCell.swift; sourceTree = "<group>"; };
+		4D9195BC2532A4FD006A40CB /* CartItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartItemTableViewCell.xib; sourceTree = "<group>"; };
 		4DF155B025307E6F00548919 /* BipBipp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BipBipp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF155B325307E6F00548919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DF155B725307E6F00548919 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +204,8 @@
 				4D296ED32531E1C6001A455C /* ExtString.swift */,
 				4D296EE02531F6FF001A455C /* ExtView.swift */,
 				4D296EE525320062001A455C /* ExtData.swift */,
+				4D296F4025328D6E001A455C /* ExtButton.swift */,
+				4D9195B525329E5F006A40CB /* ExtNotificationNames.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -223,6 +235,23 @@
 				4D296F312532158C001A455C /* ConfigData.swift */,
 			);
 			path = configs;
+			sourceTree = "<group>";
+		};
+		4D9195AF253298BF006A40CB /* views */ = {
+			isa = PBXGroup;
+			children = (
+				4D9195B0253298E9006A40CB /* CartButton.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		4D9195BA2532A4EC006A40CB /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				4D9195BB2532A4FD006A40CB /* CartItemTableViewCell.swift */,
+				4D9195BC2532A4FD006A40CB /* CartItemTableViewCell.xib */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 		4DF155A725307E6F00548919 = {
@@ -255,6 +284,7 @@
 				4DF156522530AABC00548919 /* storage */,
 				4DF155EA25307EC700548919 /* entities */,
 				4DF155E925307E9100548919 /* services */,
+				4D9195AF253298BF006A40CB /* views */,
 				4DF155EB25307EDA00548919 /* modules */,
 				4DF155B325307E6F00548919 /* AppDelegate.swift */,
 				4DF155B725307E6F00548919 /* ViewController.swift */,
@@ -436,6 +466,7 @@
 		4DF156F82530B8C200548919 /* Default */ = {
 			isa = PBXGroup;
 			children = (
+				4D9195BA2532A4EC006A40CB /* cells */,
 				4DF156F92530B8D500548919 /* CartDefaultPresenter.swift */,
 				4DF156FE2530B8E600548919 /* CartDefaultInteractor.swift */,
 				4DF157032530B8F300548919 /* CartDefaultRouter.swift */,
@@ -582,6 +613,7 @@
 				4DF1570B2530B90D00548919 /* CartDefaultView.xib in Resources */,
 				4DF1562C2530917E00548919 /* HomeDefaultView.xib in Resources */,
 				4DF155BD25307E6F00548919 /* Assets.xcassets in Resources */,
+				4D9195BE2532A4FD006A40CB /* CartItemTableViewCell.xib in Resources */,
 				4DF155BB25307E6F00548919 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -724,12 +756,14 @@
 				4DF1569A2530B4F400548919 /* MenuModule.swift in Sources */,
 				4DF156F32530B8B800548919 /* CartView.swift in Sources */,
 				4D296EDC2531E2C5001A455C /* ItemService.swift in Sources */,
+				4D9195B1253298E9006A40CB /* CartButton.swift in Sources */,
 				4DF1561025308E9E00548919 /* HomeDefaultPresenter.swift in Sources */,
 				4DF156B92530B65D00548919 /* MenuDefaultPresenter.swift in Sources */,
 				4DF156A52530B57600548919 /* MenuPresenter.swift in Sources */,
 				4D296F0725320DAC001A455C /* HomeItemTableViewCell.swift in Sources */,
 				4DF156AA2530B58A00548919 /* MenuInteractor.swift in Sources */,
 				4DF156D82530B84F00548919 /* CartModule.swift in Sources */,
+				4D296F4125328D6E001A455C /* ExtButton.swift in Sources */,
 				4D296F29253214AA001A455C /* RoundedTopImageView.swift in Sources */,
 				4DF1570A2530B90D00548919 /* CartDefaultView.swift in Sources */,
 				4DF156D12530B72500548919 /* MenuDefaultView.swift in Sources */,
@@ -739,6 +773,7 @@
 				4D296F322532158C001A455C /* ConfigData.swift in Sources */,
 				4D296F1625320F7E001A455C /* RoundedButton.swift in Sources */,
 				4DF156EE2530B8AD00548919 /* CartRouter.swift in Sources */,
+				4D9195B625329E5F006A40CB /* ExtNotificationNames.swift in Sources */,
 				4DF156FA2530B8D500548919 /* CartDefaultPresenter.swift in Sources */,
 				4DF1561D25308F6600548919 /* HomeDefaultRouter.swift in Sources */,
 				4DF156542530ABA600548919 /* CartModel.swift in Sources */,
@@ -750,6 +785,7 @@
 				4D296ECD2531E041001A455C /* CategoryService.swift in Sources */,
 				4D296EE625320062001A455C /* ExtData.swift in Sources */,
 				4D296ED42531E1C6001A455C /* ExtString.swift in Sources */,
+				4D9195BD2532A4FD006A40CB /* CartItemTableViewCell.swift in Sources */,
 				4DF155F42530839F00548919 /* HomeInteractor.swift in Sources */,
 				4DF156E92530B8A300548919 /* CartInteractor.swift in Sources */,
 				4D296EE12531F6FF001A455C /* ExtView.swift in Sources */,

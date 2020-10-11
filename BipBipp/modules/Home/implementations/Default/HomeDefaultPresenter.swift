@@ -18,6 +18,10 @@ class HomeDefaultPresenter : HomePresenter{
     
     private let diseposeBag = DisposeBag()
 
+}
+//Interaction with Interactor
+extension HomeDefaultPresenter{
+
     func fetchCategories() {
         interactor?.fetchCategories()
             .subscribeOn(SerialDispatchQueueScheduler(qos: .background))
@@ -55,4 +59,13 @@ class HomeDefaultPresenter : HomePresenter{
             ).disposed(by: diseposeBag)
     }
     
+    func addItem(item: ItemModel) {
+        interactor?.addItem(item: item)
+    }
+}
+//Interaction with Router
+extension HomeDefaultPresenter{
+    func routeToCartScreen() {
+        router?.showCartView()
+    }
 }

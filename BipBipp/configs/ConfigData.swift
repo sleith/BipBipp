@@ -12,4 +12,7 @@ class ConfigData{
     static let API_BASE_URL = "https://www.bipbipp.com/api/v1"
     
     static let ROUNDED_CORNER_RADIUS = 20
+    
+    //colors
+    static let DARK_GREEN_COLOR = "#114E01"
 }

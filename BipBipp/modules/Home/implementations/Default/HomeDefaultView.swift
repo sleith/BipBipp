@@ -11,6 +11,7 @@ class HomeDefaultView: UIViewController {
     var presenter: HomePresenter?
 
     @IBOutlet weak var mTableView: UITableView!
+    @IBOutlet weak var mBtnCart: CartButton!
     
     var mCategories : [CategoryModel] = []
     var mCurrCategory : CategoryModel? = nil
@@ -19,7 +20,8 @@ class HomeDefaultView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        self.title = "Menu"
+        
         let nib = UINib.init(nibName: "HomeItemTableViewCell", bundle: nil)
         mTableView.register(nib, forCellReuseIdentifier: "cell")
         mTableView.dataSource = self
@@ -32,6 +34,12 @@ class HomeDefaultView: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    @IBAction func onBtnClicked(_ sender: UIButton) {
+        if(sender == mBtnCart){
+            presenter?.routeToCartScreen()
+        }
     }
 }
 extension HomeDefaultView : HomeView{
@@ -74,7 +82,9 @@ extension HomeDefaultView : UITableViewDataSource{
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! HomeItemTableViewCell
         let item = mItemList[indexPath.row]
-        cell.update(item: item)
+        cell.update(item: item) {
+            self.presenter?.addItem(item: item)
+        }
         cell.selectionStyle = .none
         return cell
     }

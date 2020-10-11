@@ -11,4 +11,8 @@ protocol CartPresenter : class{
     var router : CartRouter? { get set}
     var interactor : CartInteractor? { get set}
     var view : CartView? { get set }
+    
+    //With Interactor
+    func loadData()
+    func removeCart(cart:CartModel)
 }
