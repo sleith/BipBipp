@@ -9,6 +9,17 @@ import Foundation
 import UIKit
 
 class RoundedView : UIView {
+    var roundedCornerSize = ConfigData.ROUNDED_CORNER_RADIUS
+    
+    @IBInspectable var cornerSize: String {
+        get {
+            return roundedCornerSize.description
+        }
+        set(value) {
+            self.roundedCornerSize = Int(value) ?? ConfigData.ROUNDED_CORNER_RADIUS
+            self.layer.cornerRadius = CGFloat(self.roundedCornerSize)
+        }
+    }
     
     override init(frame: CGRect) {
          super.init(frame: frame)
@@ -26,8 +37,7 @@ class RoundedView : UIView {
     }
     
     func commonInit(){
-        dropShadow(cornerRadius: CGFloat(ConfigData.ROUNDED_CORNER_RADIUS), shadowOffset: CGSize(width:-1, height:1), shadowRadius: 5, shadowOpacity: 0.2)
-        
+        dropShadow(cornerRadius: CGFloat(roundedCornerSize), shadowOffset: CGSize(width:-1, height:1), shadowRadius: 5, shadowOpacity: 0.2)
     }
      
 }
