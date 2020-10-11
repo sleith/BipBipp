@@ -24,11 +24,11 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9d0-eg-va4" customClass="CartButton" customModule="BipBipp" customModuleProvider="target">
-                    <rect key="frame" x="354" y="836" width="40" height="40"/>
+                    <rect key="frame" x="344" y="826" width="50" height="50"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="40" id="6Z3-h0-xaX"/>
-                        <constraint firstAttribute="height" constant="40" id="fyI-19-APl"/>
+                        <constraint firstAttribute="width" constant="50" id="6Z3-h0-xaX"/>
+                        <constraint firstAttribute="height" constant="50" id="fyI-19-APl"/>
                     </constraints>
                     <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
                     <state key="normal" image="ic_cart"/>

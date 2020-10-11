@@ -18,7 +18,7 @@ class CartButton : RoundedButton{
         clipsToBounds = false
         
         //add count label
-        let lblSize = self.frame.width / 3
+        let lblSize = self.frame.width * 0.4
         countLabel = UILabel.init(frame: CGRect.init(x: self.frame.width - lblSize, y: 0, width: lblSize, height: lblSize))
         countLabel.layer.cornerRadius = lblSize / 2
         countLabel.textColor = UIColor.white

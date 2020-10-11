@@ -20,14 +20,19 @@ class HomeDefaultView: UIViewController {
     var mCategories : [CategoryModel] = []
     var mCurrCategory : CategoryModel? = nil
     var mItemList : [ItemModel] = []
+    var mCategoryIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Menu"
         
-        let nib = UINib.init(nibName: "HomeItemTableViewCell", bundle: nil)
-        mTableView.register(nib, forCellReuseIdentifier: "cell")
+        let nibTabCell = UINib.init(nibName: "TabCategoryTableViewCell", bundle: nil)
+        mTableView.register(nibTabCell, forCellReuseIdentifier: "tabCell")
+        
+        let nibCell = UINib.init(nibName: "HomeItemTableViewCell", bundle: nil)
+        mTableView.register(nibCell, forCellReuseIdentifier: "cell")
+        
         mTableView.dataSource = self
         mTableView.delegate = self
         mTableView.separatorStyle = .none
@@ -78,7 +83,8 @@ extension HomeDefaultView : HomeView{
     
     func displayCategories(categories: [CategoryModel]) {
         mCategories = categories
-        mCurrCategory = categories.first
+        mCategoryIndex = 0
+        mCurrCategory = categories[mCategoryIndex]
         mTableView.reloadData()
         
         if let category = mCurrCategory{
@@ -94,32 +100,36 @@ extension HomeDefaultView : HomeView{
 extension HomeDefaultView : UITableViewDataSource{
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        if(section == 0){
-//            return mCategories.count
-//        }else{
-//            return mItemList.count
-//        }
-        return mItemList.count
+        if(section == 0){
+            return 1
+        }else{
+            return mItemList.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        if(indexPath.section == 0){
-//
-//        }else{
-//
-//        }
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! HomeItemTableViewCell
-        let item = mItemList[indexPath.row]
-        cell.update(item: item) {
-            self.presenter?.addItem(item: item)
+        if(indexPath.section == 0){
+            let cell = tableView.dequeueReusableCell(withIdentifier: "tabCell") as! TabCategoryTableViewCell
+            cell.update(currTabIndex: mCategoryIndex, categories: mCategories) { index in
+                self.mCategoryIndex = index
+                self.mCurrCategory = self.mCategories[self.mCategoryIndex]
+                self.presenter?.fetchItems(categoryId: self.mCurrCategory?.id ?? 0)
+            }
+            cell.selectionStyle = .none
+            return cell
+        }else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! HomeItemTableViewCell
+            let item = mItemList[indexPath.row]
+            cell.update(item: item) {
+                self.presenter?.addItem(item: item)
+            }
+            cell.selectionStyle = .none
+            return cell
         }
-        cell.selectionStyle = .none
-        return cell
     }
     
     
